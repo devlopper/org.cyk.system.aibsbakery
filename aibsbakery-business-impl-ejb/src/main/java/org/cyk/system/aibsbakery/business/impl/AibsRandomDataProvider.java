@@ -9,7 +9,7 @@ import org.cyk.system.root.business.impl.AbstractRandomDataProvider;
 import org.cyk.system.root.business.impl.RootRandomDataProvider;
 
 @Singleton
-public class RandomDataProvider extends AbstractRandomDataProvider implements Serializable {
+public class AibsRandomDataProvider extends AbstractRandomDataProvider implements Serializable {
 
 	private static final long serialVersionUID = -4495079111239824662L;
 

@@ -6,7 +6,7 @@ import javax.inject.Singleton;
 
 import lombok.Getter;
 
-import org.cyk.system.aibsbakery.business.impl.BusinessLayer;
+import org.cyk.system.aibsbakery.business.impl.AibsBakeryBusinessLayer;
 import org.cyk.ui.api.AbstractUserSession;
 import org.cyk.ui.api.command.menu.SystemMenu;
 import org.cyk.ui.web.api.security.shiro.WebEnvironmentAdapter;
@@ -18,7 +18,7 @@ import org.cyk.utility.common.annotation.Deployment.InitialisationType;
 @Singleton @Deployment(initialisationType=InitialisationType.EAGER,order=WebManager.DEPLOYMENT_ORDER) @Getter
 public class WebManager extends AbstractPrimefacesManager implements Serializable {
 
-	public static final int DEPLOYMENT_ORDER = BusinessLayer.DEPLOYMENT_ORDER+1;
+	public static final int DEPLOYMENT_ORDER = AibsBakeryBusinessLayer.DEPLOYMENT_ORDER+1;
 	private static final long serialVersionUID = 7231721191071228908L;
 
 	private static WebManager INSTANCE;

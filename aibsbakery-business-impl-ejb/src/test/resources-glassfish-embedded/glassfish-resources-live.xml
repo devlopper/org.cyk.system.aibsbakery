@@ -6,10 +6,10 @@
 
     <jdbc-connection-pool datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" res-type="javax.sql.DataSource" name="ArquillianHsqlPool">
       <property name="servername" value="localhost"></property>
-      <property name="databasename" value="cyk_${systemId}_db"></property>
+      <property name="databasename" value="cyk_aibsbakery_db"></property>
       <property name="user" value="root"></property>
       <property name="password" value="root"></property>
-      <property name="URL" value="jdbc:mysql://localhost:3306/cyk_${systemId}_db"></property>
+      <property name="URL" value="jdbc:mysql://localhost:3306/cyk_aibsbakery_db"></property>
     </jdbc-connection-pool>
     
     <jdbc-resource pool-name="ArquillianHsqlPool" jndi-name="jdbc/arquillian" />

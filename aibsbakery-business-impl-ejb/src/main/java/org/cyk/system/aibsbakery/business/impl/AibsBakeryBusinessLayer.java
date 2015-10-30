@@ -12,13 +12,13 @@ import org.cyk.system.root.model.AbstractIdentifiable;
 import org.cyk.utility.common.annotation.Deployment;
 import org.cyk.utility.common.annotation.Deployment.InitialisationType;
 
-@Singleton @Deployment(initialisationType=InitialisationType.EAGER,order=BusinessLayer.DEPLOYMENT_ORDER)
-public class BusinessLayer extends AbstractBusinessLayer implements Serializable {
+@Singleton @Deployment(initialisationType=InitialisationType.EAGER,order=AibsBakeryBusinessLayer.DEPLOYMENT_ORDER)
+public class AibsBakeryBusinessLayer extends AbstractBusinessLayer implements Serializable {
 
 	public static final int DEPLOYMENT_ORDER = RootBusinessLayer.DEPLOYMENT_ORDER+1;
 	private static final long serialVersionUID = -462780912429013933L;
 
-	private static BusinessLayer INSTANCE;
+	private static AibsBakeryBusinessLayer INSTANCE;
 		
 	@Override
 	protected void initialisation() {
@@ -50,7 +50,7 @@ public class BusinessLayer extends AbstractBusinessLayer implements Serializable
     }
 	
 	
-	public static BusinessLayer getInstance() {
+	public static AibsBakeryBusinessLayer getInstance() {
 		return INSTANCE;
 	}
 	

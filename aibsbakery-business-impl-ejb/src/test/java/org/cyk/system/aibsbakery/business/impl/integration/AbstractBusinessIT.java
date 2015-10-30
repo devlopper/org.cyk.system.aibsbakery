@@ -18,7 +18,7 @@ import org.cyk.system.root.business.impl.validation.AbstractValidator;
 import org.cyk.system.root.business.impl.validation.DefaultValidator;
 import org.cyk.system.root.business.impl.validation.ExceptionUtils;
 import org.cyk.system.root.business.impl.validation.ValidatorMap;
-import org.cyk.system.aibsbakery.business.impl.BusinessLayer;
+import org.cyk.system.aibsbakery.business.impl.AibsBakeryBusinessLayer;
 import org.cyk.system.aibsbakery.business.impl.BusinessTestHelper;
 import org.cyk.system.root.model.AbstractIdentifiable;
 import org.cyk.system.root.persistence.impl.GenericDaoImpl;
@@ -59,7 +59,7 @@ public abstract class AbstractBusinessIT extends AbstractIntegrationTestJpaBased
 	@Inject protected RootBusinessLayer rootBusinessLayer;
 	@Inject protected RootTestHelper rootTestHelper;
 	
-	@Inject protected BusinessLayer aibsbakeryBusinessLayer;
+	@Inject protected AibsBakeryBusinessLayer aibsbakeryBusinessLayer;
 	@Inject protected BusinessTestHelper aibsbakeryBusinessTestHelper;
 	
 	@Inject protected UserTransaction userTransaction;
